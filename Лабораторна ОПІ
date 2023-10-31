@@ -5,19 +5,19 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    int a, k;
     double h;
     cout << "Введіть а: ";
     cin >> a;
-    cout << "Введіть b: ";
-    cin >> b;
+    cout << "Введіть k: ";
+    cin >> k;
     cout << "Введіть h: ";
     cin >> h;
     double y, x = a;
     // Цикл while
-    while (x <= b)
+    while (x <= k)
     {
-        y = exp(x) + abs(x) + pow(x, 2);
+        y = exp(x) - abs(x) - pow(x, 3);
         cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
         x += h;
     } 
@@ -26,5 +26,5 @@ int main()
         y = exp(x) + abs(x) + pow(x, 2);
         cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
         x += h;
-    } while (x <= b);
+    } while (x <= k);
 }
