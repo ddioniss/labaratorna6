@@ -1,0 +1,30 @@
+#include <iomanip>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    double h;
+    cout << "Введіть а: ";
+    cin >> a;
+    cout << "Введіть b: ";
+    cin >> b;
+    cout << "Введіть h: ";
+    cin >> h;
+    double y, x = a;
+    // Цикл while
+    while (x <= b)
+    {
+        y = exp(x) + abs(x) + pow(x, 2);
+        cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
+        x += h;
+    } 
+    // Цикл do ... while
+    do {
+        y = exp(x) + abs(x) + pow(x, 2);
+        cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
+        x += h;
+    } while (x <= b);
+}
