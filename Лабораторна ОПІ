@@ -17,13 +17,13 @@ int main()
     // Цикл while
     while (x <= k)
     {
-        y = exp(x) - abs(x) - pow(x, 3);
+        y = exp(x) + abs(x) - pow(x, 7);
         cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
         x += h;
     } 
     // Цикл do ... while
     do {
-        y = exp(x) + abs(x) + pow(x, 2);
+        y = exp(x) + abs(x) + pow(x, 5);
         cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
         x += h;
     } while (x <= k);
