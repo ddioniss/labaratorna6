@@ -13,9 +13,6 @@ double l;
     cin >> a;
     cout << "Введіть k: ";
     cin >> k;
-    cout << "Введіть h: ";
-    cin >> h;
-    double y, x = a;
     // Цикл while
     while (x <= k)
     {
