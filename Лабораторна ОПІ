@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+int l;
+double l;
     int a, k;
     double h;
     cout << "Введіть а: ";
