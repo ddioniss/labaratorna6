@@ -1,6 +1,0 @@
-  while (x <= k)
-    {
-        y = exp(x) + abs(x) - pow(x, 7);
-        cout << setw(10) << "x = " << x << setw(10) << "y = " << y << endl;
-        x += h;
-    } 
